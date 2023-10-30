@@ -1,0 +1,81 @@
+const bibleBooks = [
+    { name: "Genesis", index: 1, chapters: 50 },
+    { name: "Exodus", index: 2, chapters: 40 },
+    { name: "Leviticus", index: 3, chapters: 27 },
+    { name: "Numbers", index: 4, chapters: 36 },
+    { name: "Deuteronomy", index: 5, chapters: 34 },
+    { name: "Joshua", index: 6, chapters: 24 },
+    { name: "Judges", index: 7, chapters: 21 },
+    { name: "Ruth", index: 8, chapters: 4 },
+    { name: "1 Samuel", index: 9, chapters: 31 },
+    { name: "2 Samuel", index: 10, chapters: 24 },
+    { name: "1 Kings", index: 11, chapters: 22 },
+    { name: "2 Kings", index: 12, chapters: 25 },
+    { name: "1 Chronicles", index: 13, chapters: 29 },
+    { name: "2 Chronicles", index: 14, chapters: 36 },
+    { name: "Ezra", index: 15, chapters: 10 },
+    { name: "Nehemiah", index: 16, chapters: 13 },
+    { name: "Esther", index: 17, chapters: 10 },
+    { name: "Job", index: 18, chapters: 42 },
+    { name: "Psalms", index: 19, chapters: 150 },
+    { name: "Proverbs", index: 20, chapters: 31 },
+    { name: "Ecclesiastes", index: 21, chapters: 12 },
+    { name: "Song of Solomon", index: 22, chapters: 8 },
+    { name: "Isaiah", index: 23, chapters: 66 },
+    { name: "Jeremiah", index: 24, chapters: 52 },
+    { name: "Lamentations", index: 25, chapters: 5 },
+    { name: "Ezekiel", index: 26, chapters: 48 },
+    { name: "Daniel", index: 27, chapters: 12 },
+    { name: "Hosea", index: 28, chapters: 14 },
+    { name: "Joel", index: 29, chapters: 3 },
+    { name: "Amos", index: 30, chapters: 9 },
+    { name: "Obadiah", index: 31, chapters: 1 },
+    { name: "Jonah", index: 32, chapters: 4 },
+    { name: "Micah", index: 33, chapters: 7 },
+    { name: "Nahum", index: 34, chapters: 3 },
+    { name: "Habakkuk", index: 35, chapters: 3 },
+    { name: "Zephaniah", index: 36, chapters: 3 },
+    { name: "Haggai", index: 37, chapters: 2 },
+    { name: "Zechariah", index: 38, chapters: 14 },
+    { name: "Malachi", index: 39, chapters: 4 },
+    { name: "Matthew", index: 40, chapters: 28 },
+    { name: "Mark", index: 41, chapters: 16 },
+    { name: "Luke", index: 42, chapters: 24 },
+    { name: "John", index: 43, chapters: 21 },
+    { name: "Acts", index: 44, chapters: 28 },
+    { name: "Romans", index: 45, chapters: 16 },
+    { name: "1 Corinthians", index: 46, chapters: 16 },
+    { name: "2 Corinthians", index: 47, chapters: 13 },
+    { name: "Galatians", index: 48, chapters: 6 },
+    { name: "Ephesians", index: 49, chapters: 6 },
+    { name: "Philippians", index: 50, chapters: 4 },
+    { name: "Colossians", index: 51, chapters: 4 },
+    { name: "1 Thessalonians", index: 52, chapters: 5 },
+    { name: "2 Thessalonians", index: 53, chapters: 3 },
+    { name: "1 Timothy", index: 54, chapters: 6 },
+    { name: "2 Timothy", index: 55, chapters: 4 },
+    { name: "Titus", index: 56, chapters: 3 },
+    { name: "Philemon", index: 57, chapters: 1 },
+    { name: "Hebrews", index: 58, chapters: 13 },
+    { name: "James", index: 59, chapters: 5 },
+    { name: "1 Peter", index: 60, chapters: 5 },
+    { name: "2 Peter", index: 61, chapters: 3 },
+    { name: "1 John", index: 62, chapters: 5 },
+    { name: "2 John", index: 63, chapters: 1 },
+    { name: "3 John", index: 64, chapters: 1 },
+    { name: "Jude", index: 65, chapters: 1 },
+    { name: "Revelation", index: 66, chapters: 22 },
+];  
+
+
+function generateListChapters(index) {
+    let chapters = [];
+    let numOfChapters = bibleBooks[index - 1].chapters;
+    for (let i = 1; i <= numOfChapters; i++) {
+        chapters.push(i);
+    }
+    return chapters;
+}
+
+
+export {bibleBooks, generateListChapters};
