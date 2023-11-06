@@ -35,12 +35,12 @@ Before you can run this project locally or deploy it, you'll need the following 
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/ZDG-BibleApp/BIBLE_APP.git
+   git clone https://github.com/Vico509/Ora.git
    ```
 
 2. Change directory to the project folder:
    ```
-   cd BIBLE_APP
+   cd Ora
    ```
 
 3. Install project dependencies:
